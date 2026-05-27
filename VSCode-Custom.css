@@ -1,0 +1,50 @@
+/* ============================================
+   VS Code Custom UI Styles
+   ============================================ */
+
+/* ---- 编辑器水印 ---- */
+.letterpress {
+    background-image: url("https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    opacity: .75 !important;
+    aspect-ratio: 3/2 !important;
+}
+
+/* ---- 语法高亮渐变效果 ---- */
+.mtk10 {
+    color: yellow;
+    background-image: linear-gradient(45deg, #ff61d2, #fe908f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.mtk5 {
+    color: #50fa7b;
+    background-image: linear-gradient(45deg, #11998f, #38ef7d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+/* ---- Tab 顶部渐变动画边框 ---- */
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top:not(:focus)>.tab-border-top-container,
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.selected.tab-border-top:not(:focus)>.tab-border-top-container {
+    z-index: 6 !important;
+    top: 0 !important;
+    height: 4px !important;
+    min-height: 4px !important;
+    max-height: 4px !important;
+    background-color: var(--tab-border-top-color) !important;
+    background-image: linear-gradient(to right, #11998f, #d13abd, #efbd8a, #11998f) !important;
+    background-size: 200% auto !important;
+    animation: borderTopActive 4s linear infinite !important;
+}
+
+@keyframes borderTopActive { 
+    to {
+        background-position: 200%;
+    }
+}
