@@ -30,7 +30,7 @@
 }
 
 /* ---- Tab 顶部渐变动画边框 ---- */
-.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top:not(:focus)>.tab-border-top-container,
+/* .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top:not(:focus)>.tab-border-top-container,
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.selected.tab-border-top:not(:focus)>.tab-border-top-container {
     z-index: 6 !important;
     top: 0 !important;
@@ -47,4 +47,4 @@
     to {
         background-position: 200%;
     }
-}
+} */
